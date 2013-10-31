@@ -1,9 +1,34 @@
+   @font-face {
+    font-family: Metropolis_1920;  
+    src: url('../fonts/Metropolis_1920.ttf'); 
+   }
+   h1,h2,h3,h4,h5,h6 {
+    font-family: Metropolis_1920 ;
+    color: #0090ff;
+   }
+   .bs-sidenav a{
+       font-family: Metropolis_1920;
+       font-size: 2em;
+       /*color: #0090ff;*/
+       color: #000;
+   }
+   #topnav a{
+       font-family: Metropolis_1920;
+       font-size: 2em;
+       /*color: #0090ff;*/
+   }
+   #topnav a:hover{
+       
+   }
 #forkme_banner {
   display: block;
+  width: 200px;
   padding: 10px 50px 10px 10px;
   color: #fff;
   background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
-  font-weight: 700;
+  /*font-weight: 700;*/
+  font-size: 1.5em;
+  font-family: Metropolis_1920;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;

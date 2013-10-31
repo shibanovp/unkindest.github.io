@@ -1,7 +1,3 @@
-// NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
-// IT'S ALL JUST JUNK FOR OUR DOCS!
-// ++++++++++++++++++++++++++++++++++++++++++
-
 !function($) {
 
     $(function() {
@@ -48,19 +44,19 @@
             $('.bs-top').affix();
 
             setInterval(function() {
-                $('ul.nav.navbar-nav.navbar-right li').removeClass('active');
+                $('ul.nav.navbar-nav li').removeClass('active');
                 var a = $('ul.nav.bs-sidenav >li > ul > li.active a');
                 if (!a.length)
                     a = $('ul.nav.bs-sidenav > li.active a');
                 //alert(a.attr("href"));
                 if (a.parent().has('ul').length)
                     return;                
-                $('ul.nav.navbar-nav.navbar-right a[href=' + a.attr("href") + ']').parent().addClass("active");
+                $('ul.nav.navbar-nav a[href=' + a.attr("href") + ']').parent().addClass("active");
                 //alert(select);
             }, 100)
         }, 100)
-        $('ul.nav.navbar-nav.navbar-right li').on('click',function(){
-            $('ul.nav.navbar-nav.navbar-right li').removeClass('active');
+        $('ul.nav.navbar-nav li').on('click',function(){
+            $('ul.nav.navbar-nav li').removeClass('active');
             this.addClass('active');
         })
 
