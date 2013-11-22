@@ -1,5 +1,5 @@
 !function($) {
-/*scrollspy*/
+/*Scrollspy*/
     $(function() {
 
         var $window = $(window)
